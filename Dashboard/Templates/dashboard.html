@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ADMISSION STUDENTS</title>
+</head>
+<body>
+
+
+
+<table align="" style="-webkit-font-feature-settings: normal" border="1" width = "100%" cellpadding = "5" cellspacing = "5">
+    {% for l in student   %}
+    <tr>
+        <td>{{ l.full_name }}</td>
+        <td>{{ l.initial }}</td>
+        <td>{{ l.roll_no}}</td>
+        <td>{{ l.email_id }}</td>
+        <td>{{ l.phone_number }}</td>
+        <td>{{ l.school_details }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+
+
+</body>
+</html>
